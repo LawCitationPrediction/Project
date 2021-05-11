@@ -21,8 +21,16 @@ Our LawPairBERT model has two versions, one with BERT Embedding and another one 
 
 Version 1 - BERT Embedding:
 
-![alt text](https://github.com/LawCitationPrediction/Project/blob/main/img/version1.png?raw=True)
+<a href="url"><img src="https://github.com/LawCitationPrediction/Project/blob/main/img/version1.png" align="center" height="500" ></a>
 
 Version 2 - Combined BERT and Graph Embedding:
 
-![alt text](https://github.com/LawCitationPrediction/Project/blob/main/img/version2.png?raw=True)
+<a href="url"><img src="https://github.com/LawCitationPrediction/Project/blob/main/img/version2.png" align="center" height="500" ></a>
+
+## Performance Analysis
+
+Different representations have distinct performance. In our project, representations of words have low accuarcy and high computational cost. And it's hard to capture the pair representations.
+
+In the table below, we compare the Performance of our LawPairBERT models. BERT embedding tend to perform better than the combined embeddings of both BERT and Graph in predicting pairs with citation relationship. However, combined embedding is better in predicting overall accuracy. And, as our expectation, using recall as the early stopping boosts the accuracy for predicting the true citation, while reducing the overall accuracy among different labels.
+
+<a href="url"><img src="https://github.com/LawCitationPrediction/Project/blob/main/img/performance.png" align="center" height="500" ></a>
